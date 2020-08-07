@@ -1,0 +1,23 @@
+﻿<Window x:Class="Dierenpark.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dierenpark"
+        mc:Ignorable="d"
+        Title="Dierenpark - door: Freek Heining" Height="450" Width="600">
+    <Grid>
+        <TextBox x:Name="achternaam_textBox" HorizontalAlignment="Left" Height="23" Margin="218,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" TabIndex="1" RenderTransformOrigin="0.917,0.174" TextChanged="achternaam_textBox_TextChanged"/>
+        <DatePicker x:Name="geboortedatum_DatePicker" HorizontalAlignment="Left" Margin="218,98,0,0" VerticalAlignment="Top" TabIndex="2" FirstDayOfWeek="Monday" SelectedDateFormat="Short" Text="e" DisplayDate="2020-08-07" SelectedDateChanged="geboortedatum_DatePicker_SelectedDateChanged"/>
+        <Slider x:Name="kinderen_slider" HorizontalAlignment="Left" Margin="218,222,0,0" VerticalAlignment="Top" Width="101" AutoToolTipPlacement="TopLeft" TabIndex="3" ValueChanged="kinderen_slider_ValueChanged" SmallChange="1" TickPlacement="BottomRight" IsSnapToTickEnabled="True"/>
+        <Button x:Name="bereken_button" Content="Bereken" HorizontalAlignment="Left" Margin="75,280,0,0" VerticalAlignment="Top" Width="100" TabIndex="4" Click="bereken_button_Click" IsEnabled="False" Height="35"/>
+        <Label Content="Totaalprijs:" HorizontalAlignment="Left" Margin="109,351,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="totaalprijs_textBox" HorizontalAlignment="Left" Height="49" Margin="218,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342"/>
+        <Label Content="Aantal kinderen:" HorizontalAlignment="Left" Margin="79,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Geboortedatum aanvrager:" HorizontalAlignment="Left" Margin="21,97,0,0" VerticalAlignment="Top"/>
+        <Label Content="Achternaam aanvrager:" HorizontalAlignment="Left" Margin="40,32,0,0" VerticalAlignment="Top" Width="135"/>
+        <CheckBox x:Name="partner_checkBox" Content="" HorizontalAlignment="Left" Margin="218,166,0,0" VerticalAlignment="Top" Click="partner_checkBox_Click"/>
+        <Label Content="Partner j/n:" HorizontalAlignment="Left" Margin="106,158,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
